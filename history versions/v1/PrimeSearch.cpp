@@ -1,21 +1,22 @@
-#include<iostream>
+//shouldn't be used
+#include <iostream>
 #include <stdlib.h>
-#include<cstdio>
-#include<fstream>
+#include <cstdio>
+#include <fstream>
 using namespace std;
 int main(){
-	cout<<"»¶Ó­À´µ½Ñ°ÕÒÖÊÊý³ÌÐò£¡"<<endl<<endl<<"×÷Õß£ºÁºÓîÐù¡£"<<endl<<endl; 
+	cout<<"\nWelcome to Prime Number Searcher\n"; 
 	ofstream ocout;
-	ocout.open("ÖÊÊýÁÐ±í.txt");
+	ocout.open("Primes.txt");
 	long long n,m,i,a;
 	a=0;
-	cout<<"ÇëÊäÈëÖÕÖ¹Öµ£º"; 
+	cout<<"Please enter a termination value"; 
 	cin>>n;
-	cout<<"ÇëÑ¡ÔñÊÇ·ñÊä³öÎÄ±¾ÎÄµµ¡£"<<endl<<"0:²»Êä³ö¡£"<<endl<<"1£ºÊä³ö"<<endl;
+	cout<<"ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Äµï¿½ï¿½ï¿½"<<endl<<"0:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl<<"1ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
 	bool b;
 	cin>>b;
 	bool c;
-	cout<<"ÇëÑ¡ÔñÊÇ·ñÔÚ´Ë´°¿ÚÊä³ö½á¹û¡£"<<endl<<"0:²»Êä³ö¡£"<<endl<<"1£ºÊä³ö"<<endl;
+	cout<<"ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ú´Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl<<"0:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl<<"1ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
 	cin>>c;
 	if ((b==1) && (c==1)){
 	for(m=2;m<=n;m++)
@@ -46,7 +47,7 @@ int main(){
 		}
 	
 	}
-	cout<<"¹²ÓÐ"<<a<<"¸öÖÊÊý"<<endl;
+	cout<<"ï¿½ï¿½ï¿½ï¿½"<<a<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
     }
     if ((b==1) && (c==0)){
     	int z=0;
@@ -62,12 +63,12 @@ int main(){
 			z++;
 		}
 		if(z==1000){
-			cout<<"Ä¿Ç°ÒÑ¼ÆËãµ½£º"<<i<<endl;
+			cout<<"Ä¿Ç°ï¿½Ñ¼ï¿½ï¿½ãµ½ï¿½ï¿½"<<i<<endl;
 			z=0;
 		}
 	
 	}
-	cout<<"¹²ÓÐ"<<a<<"¸öÖÊÊý"<<endl;
+	cout<<"ï¿½ï¿½ï¿½ï¿½"<<a<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
     }
     if ((b==0) && (c==0)){
     	int bei;
@@ -84,16 +85,16 @@ int main(){
 			bei=i;
 		}
 		if(z==1000){
-			cout<<"Ä¿Ç°ÒÑ¼ÆËãµ½£º"<<i<<endl;
+			cout<<"Ä¿Ç°ï¿½Ñ¼ï¿½ï¿½ãµ½ï¿½ï¿½"<<i<<endl;
 			z=0;
 		}
 	
 	}
-	cout<<"1~"<<n<<"ÄÚ£¬×î´óµÄÖÊÊýÊÇ"<<bei<<endl;
-	cout<<"¹²ÓÐ"<<a<<"¸öÖÊÊý"<<endl;
+	cout<<"1~"<<n<<"ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<bei<<endl;
+	cout<<"ï¿½ï¿½ï¿½ï¿½"<<a<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;
     }
 	ocout.close();
-	cout<<"×÷Õß£ºÁºÓîÐù¡£"<<endl; 
+	cout<<"ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl; 
 	system("pause");
 	return 0;
 } 
